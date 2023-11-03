@@ -1,0 +1,109 @@
+/*-------------plantilla base-------------
+*/
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;/*no borrar, crea margenes auto de 10 px*/
+    padding: 0;/*no borrar, crea margenes auto de 10 px*/
+}
+header{
+    background-color: #625d5d;
+    position: sticky;/*panel fijo*/
+    top: 0; /* Fija el panel en la parte superior de la ventana */
+    z-index: 100;/*poner por encima*/
+    color: white;/*color de letra*/
+    padding: 20px 20px;/*ajusta el ancho del panel de nav*/
+    align-items: center; /* Centrar verticalmente los elementos */
+    display: flex; /* Usar flexbox para alinear elementos horizontalmente */
+    justify-content: space-between; /* Distribuir elementos en el espacio disponible */
+}
+nav ul a {
+    margin-right: 16px;
+    text-decoration: none;
+    color: #ffffff;
+}
+/* */
+.boton {
+    display: flex; /* Usar flexbox para alinear elementos horizontalmente */
+}
+button {
+    background-color: #d69ec4;
+    color: #000000;
+    border-radius:18px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: 10px; /* Espacio entre los botones */
+}
+
+/*CAMBIAR COLOR DE SELECCION DEL PANEL DE NAV*/
+nav a:hover{
+    color:#ff00ee;
+    text-decoration: underline;
+
+}
+/* Estilos para el pie de página */
+footer {
+    align-items: center;
+    text-align: center;
+    background-color:#ff00ee;
+    padding: 20px;/*margen de lados*/
+    align-items: center
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-center {
+    flex: 2;
+}
+
+.footer-center a {
+    margin: 10px 10px;
+}
+
+.footer-center img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-right {
+    flex-basis: calc(50% - 100px); /* Divide el espacio en dos columnas, menos el ancho del logo */
+    text-align: right;
+    height: 100%; /* Establece una altura máxima para que ocupe toda la altura disponible */
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0px; /* Elimina el margen inferior para alinear la lista en la parte superior */
+}
+
+.footer-right ul li {
+    margin-bottom: 10px;/*espacio entre elementos de lista*/
+    text-align: right; /* Alinea el texto a la derecha */
+}
+.footer-other {
+    flex-basis: calc(50% - 100px); /* Divide el espacio en dos columnas, menos el ancho del logo */
+    text-align: left;
+    height: 100%; /* Establece una altura máxima para que ocupe toda la altura disponible */
+}
+
+.footer-other ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0px; /* Elimina el margen inferior para alinear la lista en la parte superior */
+}
+
+.footer-other ul li {
+    margin-bottom: 10px;/*espacio entre elementos de lista*/
+    text-align: left; /* Alinea el texto a la derecha */
+}
+.copy{
+    color: rgb(35, 28, 28);
+    font-size: 15px;
+    margin: 15px;
+}
