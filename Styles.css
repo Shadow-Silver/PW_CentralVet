@@ -1,0 +1,389 @@
+
+/*plantilla agenda*/
+/*FORMULARIO */
+main{
+    width: 940px;
+    margin: 0 auto; 
+}
+form{
+   margin: 40px; 
+}
+form label, form p{
+    display: block; /*QUEDEN LOS CAMPOS HACIA ABAJO*/
+    font-size: 15px; /*TAMAÑO DE LETRA*/
+    margin: 0 0 10px;
+}
+.input-patdron{
+    display: block;
+    margin: 0 0 10px;
+    padding: 8px 10px;
+    width: 50%;
+}
+.checkbox{
+    margin: 20px 0;
+}
+.enviar{
+    width: 90px;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background: rgb(9, 255, 0);
+    transition: 2s all;
+    cursor: pointer;
+    border-radius: 25px;
+
+}
+ 
+.enviar:hover{
+    border-color:rgb(252, 0, 0); 
+    transform: scale(1.2);
+}     
+
+/* Estilos para el pie de página */
+footer {
+    align-items: center;
+    text-align: center;
+    background-color: rgb(168, 100, 100);
+    padding: 20px;/*margen de lados*/
+    align-items: center
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-center {
+    flex: 2;
+}
+
+.footer-center a {
+    margin: 10px 10px;
+}
+
+.footer-center img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-right {
+    flex-basis: calc(50% - 100px); /* Divide el espacio en dos columnas, menos el ancho del logo */
+    text-align: right;
+    height: 100%; /* Establece una altura máxima para que ocupe toda la altura disponible */
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0px; /* Elimina el margen inferior para alinear la lista en la parte superior */
+}
+
+.footer-right ul li {
+    margin-bottom: 10px;/*espacio entre elementos de lista*/
+    text-align: right; /* Alinea el texto a la derecha */
+}
+.footer-other {
+    flex-basis: calc(50% - 100px); /* Divide el espacio en dos columnas, menos el ancho del logo */
+    text-align: left;
+    height: 100%; /* Establece una altura máxima para que ocupe toda la altura disponible */
+}
+
+.footer-other ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0px; /* Elimina el margen inferior para alinear la lista en la parte superior */
+}
+
+.footer-other ul li {
+    margin-bottom: 10px;/*espacio entre elementos de lista*/
+    text-align: left; /* Alinea el texto a la derecha */
+}
+.copy{
+    color: rgb(35, 28, 28);
+    font-size: 15px;
+    margin: 15px;
+}
+/*------------Plantilla blog------------*/
+.categorias li{
+    display:inline-block; 
+    text-align: center;
+    width: 19%;
+    vertical-align: top;
+    border-color: rgb(247, 246, 246);
+    border-width:2px ;
+    border-style: solid;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor: pointer;
+    align-content: center;
+    
+}
+.TEXT1 h1{
+    text-align:center ;
+}
+.categorias li:hover{
+    border-color:orange;
+    transform: scale(1.1);  
+}
+.categorias{
+    width: auto;
+    margin: 30px;
+    padding: 30px;
+}
+.categorias h2{
+    font-size: 25px;
+    font-weight: bold;
+}
+.categorias li:hover h2 {  
+    font-size: 23px;
+}
+
+.ini1 a:hover{
+    
+    text-decoration: underline;
+}
+.caja{
+    position: relative;
+    margin: auto;
+    width: 9400px;
+}
+
+.categorias li:hover{
+    border-color:rgb(11, 184, 11);  
+}
+
+.copy{
+    color: white;
+    font-size: 8px;
+    margin: 15px;
+}
+.logoini{
+   align-items: left; 
+   margin: 1px;
+   background-color:red;
+
+}
+/*Plantilla de Clinicas */
+.infoClin {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ca8181; /* Color de fondo del rectángulo */
+    padding: 10px; /* Espaciado interior */
+    border: 1px solid #ccc; /* Borde del rectángulo */
+    width: 80%; /* Ancho del rectángulo (puedes ajustarlo según tus necesidades) */
+    margin:auto; /* Centrar el rectángulo en la página */
+}
+.clinicas{
+    font-weight: bold; /* Texto en negrita */
+    font-size: 25px; /* Tamaño de fuente más grande */
+    text-align: calc(100% - 20px); /* Centrar el texto */
+}
+
+
+/* Estilos para el texto */
+.textclin {
+    width: 70%; /* Ancho del área de texto (puedes ajustarlo según tus necesidades) */
+}
+
+table {
+    width: 50%; /* Ancho de la tabla al 100% del contenedor */
+    border-collapse: collapse; /* Fusionar los bordes de las celdas */
+    border: 0px solid #ccc; /* Agregar bordes a las celdas */
+    padding: 10px; /* Espaciado interior de las celdas */
+    margin: auto;
+  }
+
+th, td {
+    border: 0px; /* Agregar bordes a las celdas */
+    padding: 10px; /* Espaciado interior de las celdas */
+    text-align: center; /* Alinear el contenido al centro */
+  }
+/*plantilla inicio*/
+/* Estilos para el carrusel de imágenes */
+.client-services {
+    margin: 10px 0;/*espacio arriba abajo*/
+    overflow: hidden;/*cuando no se ve */
+}
+
+.slideshow {
+    white-space: nowrap;
+    animation: slide 22s linear infinite;/*da movimiento y tiempo*/
+    display:inline-flex;/*alineacion superior de imagenes*/
+    overflow: hidden;
+    margin: 0 auto;
+}
+.slideshow img {
+    max-width: auto;
+    height: 150px;/*ajustar alto de imagen en carrusel*/
+}
+
+@keyframes slide {/*movimiento entre imagenes y tiempo*/
+    0%, 100% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-10%);
+    }
+    50% {
+        transform: translateX(-20%);
+    }
+    75% {
+        transform: translateX(-30%);
+    }
+}
+
+/* Estilos para la sección de información de clientes */
+.client-information {
+    padding: 80px;/*espacio margen superior*/
+    background-color: #de8282;
+    max-width: 1000px;/*ancho*/
+    margin: auto;
+    border-radius: 40px;
+}
+
+.client-information h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+    margin-inline-end: 50px;
+}
+/*texto central vet busca*/
+.client-information p {
+    margin: 30px 60px;
+    text-align: left;
+    font-style: oblique;
+}
+
+.centered-image {
+    margin-top: 80px;/*espacio para la imagen*/
+    text-align: center;/*ubicacion*/
+}
+
+.centered-image img {
+    border-radius: 25px;
+    max-width: 100%;
+    height: auto;
+}
+/* Estilos para la sección de fotos de ancho completo */
+.full-width-photos {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;/*espacio entre seccion*/
+    max-width: 1200px;/*ancho*/
+    margin: auto;/*ajusta en el espacio al centro*/
+}
+
+.photo {
+    flex: 0 0 calc(33.33% - 8px);
+    margin: 5px;
+    
+}
+
+.photo img {
+    width: 94%;/*ajusta ancho*/
+    height: 200px;/*ajustar alto de imagen en carrusel*/
+}
+
+/* Estilos para el pie de página */
+footer {
+    align-items: center;
+    text-align: center;
+    background-color: rgb(168, 100, 100);
+    padding: 20px;/*margen de lados*/
+    align-items: center
+}
+
+.footer-left {
+    flex: 1;
+    text-align: left;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-center {
+    flex: 2;
+}
+
+.footer-center a {
+    margin: 10px 10px;
+}
+
+.footer-center img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-right {
+    flex-basis: calc(50% - 100px); /* Divide el espacio en dos columnas, menos el ancho del logo */
+    text-align: right;
+    height: 100%; /* Establece una altura máxima para que ocupe toda la altura disponible */
+}
+
+.footer-right ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0px; /* Elimina el margen inferior para alinear la lista en la parte superior */
+}
+
+.footer-right ul li {
+    margin-bottom: 10px;/*espacio entre elementos de lista*/
+    text-align: right; /* Alinea el texto a la derecha */
+}
+.footer-other {
+    flex-basis: calc(50% - 100px); /* Divide el espacio en dos columnas, menos el ancho del logo */
+    text-align: left;
+    height: 100%; /* Establece una altura máxima para que ocupe toda la altura disponible */
+}
+
+.footer-other ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 0px; /* Elimina el margen inferior para alinear la lista en la parte superior */
+}
+
+.footer-other ul li {
+    margin-bottom: 10px;/*espacio entre elementos de lista*/
+    text-align: left; /* Alinea el texto a la derecha */
+}
+.copy{
+    color: rgb(35, 28, 28);
+    font-size: 15px;
+    margin: 15px;
+}
+
+/*plantilla de quienes somos */
+.nosotros-information {
+    padding: 80px;
+    background-color: #de8282;
+    max-width: 1000px;
+    margin: auto;
+    border-radius: 40px;
+}
+
+.nosotros-information h2 {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 0px;
+    margin-inline-end: 50px;
+}
+
+.nosotros-information p {
+    margin: 30px 60px;
+    text-align: left;
+    font-style: oblique;
+    color: #cc5200;
+}
+
+iframe {
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 10px;
+    text-align: center;
+}
+
+/*plantilla de servicios*/
